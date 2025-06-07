@@ -1,0 +1,69 @@
+{
+  "name": "nori-farm-reward-system",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Advanced NFT-based reward system with smart contracts for staking and farming on Binance Smart Chain",
+  "keywords": ["defi", "staking", "rewards", "nft", "binance-smart-chain", "solidity", "react"],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/nori-farm-reward-system.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "test:coverage": "npx hardhat coverage",
+    "deploy:localhost": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "npx hardhat run scripts/deploy.js --network bsc-testnet",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network bsc-mainnet",
+    "verify:testnet": "npx hardhat run scripts/verify.js --network bsc-testnet",
+    "verify:mainnet": "npx hardhat run scripts/verify.js --network bsc-mainnet",
+    "interact:testnet": "npx hardhat run scripts/interact.js --network bsc-testnet",
+    "interact:mainnet": "npx hardhat run scripts/interact.js --network bsc-mainnet",
+    "size": "npx hardhat size-contracts",
+    "node": "npx hardhat node",
+    "clean": "npx hardhat clean"
+  },
+  "dependencies": {
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^9.9.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.3.0",
+    "vite": "^5.4.2",
+    "hardhat": "^2.18.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "ethereum-waffle": "^4.0.10",
+    "chai": "^4.3.8",
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.3.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "hardhat-contract-sizer": "^2.10.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
